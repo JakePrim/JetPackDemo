@@ -1,6 +1,7 @@
 package com.example.jetpackdemo.viewmodel
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,5 +34,15 @@ class DetailFragment:Fragment() {
         model.selected.observe(viewLifecycleOwner){
             tv_detail.text = it
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.e("DetailFragment->>>>", "onDestroy: ${hashCode()}")
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.e("DetailFragment->>>>", "onDestroyView: ${hashCode()}")
     }
 }

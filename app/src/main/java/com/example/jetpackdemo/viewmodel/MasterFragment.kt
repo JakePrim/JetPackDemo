@@ -1,6 +1,7 @@
 package com.example.jetpackdemo.viewmodel
 
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -33,5 +34,15 @@ class MasterFragment:Fragment() {
         btn_master.setOnClickListener {
             model.select("Master")
         }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        Log.e("MasterFragment->>>>", "onDestroy: ${hashCode()}")
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        Log.e("MasterFragment->>>>", "onDestroyView: ${hashCode()}")
     }
 }

@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/activity_test.xml" value="0.2798913043478261" />
+        <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/activity_view_model.xml" value="0.2798913043478261" />
         <entry key="..\:/developer/workspace/android-space/jetpackdemo/app/src/main/res/layout/activity_lifecycle.xml" value="0.23007246376811594" />
         <entry key="..\:/developer/workspace/android-space/jetpackdemo/app/src/main/res/layout/activity_live_data.xml" value="0.23007246376811594" />
         <entry key="..\:/developer/workspace/android-space/jetpackdemo/app/src/main/res/layout/activity_live_data2.xml" value="0.21920289855072464" />

@@ -16,8 +16,19 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Activity间状态共享"
+        android:onClick="onActChange"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="change"
         android:onClick="onChange"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fragment间的状态共享"/>
 
     <FrameLayout
         android:id="@+id/fl_master"
