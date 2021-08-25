@@ -1,6 +1,7 @@
 package com.example.jetpackdemo.viewmodel
 
 import android.content.Intent
+import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -17,6 +18,27 @@ class ViewModelActivity : AppCompatActivity() {
     lateinit var rotatedViewModel: RotatedViewModel
 
     lateinit var tv: TextView
+
+    /**
+     * 屏幕翻转的时候会调用如下API 保存ViewModelStore
+     */
+    override fun onRetainCustomNonConfigurationInstance(): Any? {
+        Log.e("TAG", "onRetainCustomNonConfigurationInstance")
+        return super.onRetainCustomNonConfigurationInstance()
+    }
+
+    /**
+     * getViewModelStore() 获取保存的ViewModelStore
+     */
+    override fun getLastNonConfigurationInstance(): Any? {
+        Log.e("TAG", "getLastNonConfigurationInstance")
+        return super.getLastNonConfigurationInstance()
+    }
+
+    override fun onConfigurationChanged(newConfig: Configuration) {
+        Log.e("TAG", "onConfigurationChanged")
+        super.onConfigurationChanged(newConfig)
+    }
 
     //类似savedInstanceState Activity重建会传入之前的
     override fun onCreate(savedInstanceState: Bundle?) {
