@@ -4,8 +4,17 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/activity_data_binding.xml" value="0.2798913043478261" />
+        <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/activity_main.xml" value="0.2269021739130435" />
+        <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/activity_navigation.xml" value="0.17708333333333334" />
+        <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/activity_room.xml" value="0.24682971014492755" />
         <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/activity_test.xml" value="0.2798913043478261" />
         <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/activity_view_model.xml" value="0.2798913043478261" />
+        <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/fragment_b.xml" value="0.1911231884057971" />
+        <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/fragment_c.xml" value="0.1911231884057971" />
+        <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/fragment_d.xml" value="0.1911231884057971" />
+        <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/fragment_e.xml" value="0.2563405797101449" />
+        <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/layout/fragment_test.xml" value="0.1580547112462006" />
+        <entry key="..\:/developer/workspace/JetPack/JetPackDemo/app/src/main/res/menu/menu_nav.xml" value="0.325" />
         <entry key="..\:/developer/workspace/android-space/jetpackdemo/app/src/main/res/layout/activity_lifecycle.xml" value="0.23007246376811594" />
         <entry key="..\:/developer/workspace/android-space/jetpackdemo/app/src/main/res/layout/activity_live_data.xml" value="0.23007246376811594" />
         <entry key="..\:/developer/workspace/android-space/jetpackdemo/app/src/main/res/layout/activity_live_data2.xml" value="0.21920289855072464" />

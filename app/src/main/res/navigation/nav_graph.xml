@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/afragment">
+
+    <!-- startDestination 设置第一个fragment的显示 -->
+
+    <!-- action可以设置为全局的 任何fragment都可以使用此action
+        不推荐写到具体的fragment中
+     -->
+    <action
+        android:id="@+id/action_to_afragment"
+        app:destination="@id/afragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+
+    <action
+        android:id="@+id/action_to_bfragment"
+        app:destination="@id/bfragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+
+    <action
+        android:id="@+id/action_to_cfragment"
+        app:destination="@id/cfragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+
+    <action
+        android:id="@+id/action_to_dfragment"
+        app:destination="@id/dfragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+
+    <action
+        android:id="@+id/action_to_efragment"
+        app:destination="@id/EFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim" />
+    <!-- 对应Fragment设置 -->
+    <fragment
+        android:id="@+id/afragment"
+        android:name="com.example.jetpackdemo.navigation.fragment.AFragment"
+        android:label="afragment"
+        tools:layout="@layout/fragment_test">
+
+        <!--不推荐写到特有的fragment中 配置fragment的动作：
+         id:必须要定义 名字要按照action_[start]_to_[end]
+         destination: 跳转的目标fragment的id
+         enterAnim/exitAnim: 进入退出动画
+         -->
+        <action
+            android:id="@+id/action_afragment_to_bfragment"
+            app:destination="@id/bfragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+
+        <action
+            android:id="@+id/action_afragment_to_efragment"
+            app:destination="@id/EFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/bfragment"
+        android:name="com.example.jetpackdemo.navigation.fragment.BFragment"
+        android:label="bfragment"
+        tools:layout="@layout/fragment_b">
+        <!-- deepLink 深度链接-隐式的深层链接
+            uri:配置的网址
+         -->
+        <deepLink app:uri="www.YourWebsite.com/{params}"/>
+    </fragment>
+    <fragment
+        android:id="@+id/cfragment"
+        android:name="com.example.jetpackdemo.navigation.fragment.CFragment"
+        android:label="cfragment"
+        tools:layout="@layout/fragment_c"/>
+    <fragment
+        android:id="@+id/dfragment"
+        android:name="com.example.jetpackdemo.navigation.fragment.DFragment"
+        android:label="dfragment"
+        tools:layout="@layout/fragment_d"/>
+    <fragment
+        android:id="@+id/EFragment"
+        android:name="com.example.jetpackdemo.navigation.fragment.EFragment"
+        android:label="fragment_e"
+        tools:layout="@layout/fragment_e" />
+
+</navigation>

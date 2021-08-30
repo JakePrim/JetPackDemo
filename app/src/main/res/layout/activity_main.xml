@@ -4,20 +4,58 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="10dp">
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LiveData"
-        android:onClick="onLiveData"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Lifecycle"
-        android:onClick="onLifecycle"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ViewModel"
-        android:onClick="onViewModel"/>
+        android:onClick="onLiveData"
+        android:text="LiveData" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onLifecycle"
+        android:text="Lifecycle" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onViewModel"
+        android:text="ViewModel" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onDataBinding"
+        android:text="DataBinding" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onNavigation"
+        android:text="Navigation" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onRoom"
+        android:text="Room" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onWorkManager"
+        android:text="WorkManager" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onPaging"
+        android:text="Paging" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onMVVM"
+        android:text="MVVM最佳实践" />
 </LinearLayout>
